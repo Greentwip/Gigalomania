@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{f91576ae-1e86-47c7-ad25-2ad97d8a2be5}</ProjectGuid>
+    <Keyword>DirectXApp</Keyword>
+    <RootNamespace>gigalomania_WinRT</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>gigalomania-WinRT_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>7D22E17BF8FDFA207A35FB7351A512FD67E0C7EF</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; ole32.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_mixer;$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; ole32.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_mixer;$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; ole32.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_mixer;$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; ole32.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_mixer;$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; ole32.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_mixer;$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; ole32.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_mixer;$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="Assets\gfx\attacker_ammo.png" />
+    <Image Include="Assets\gfx\attacker_flying.png" />
+    <Image Include="Assets\gfx\attacker_walking_0_0.png" />
+    <Image Include="Assets\gfx\attacker_walking_0_1.png" />
+    <Image Include="Assets\gfx\attacker_walking_0_2.png" />
+    <Image Include="Assets\gfx\attacker_walking_0_3.png" />
+    <Image Include="Assets\gfx\attacker_walking_10_0.png" />
+    <Image Include="Assets\gfx\attacker_walking_10_1.png" />
+    <Image Include="Assets\gfx\attacker_walking_10_2.png" />
+    <Image Include="Assets\gfx\attacker_walking_10_3.png" />
+    <Image Include="Assets\gfx\attacker_walking_1_0.png" />
+    <Image Include="Assets\gfx\attacker_walking_1_1.png" />
+    <Image Include="Assets\gfx\attacker_walking_1_2.png" />
+    <Image Include="Assets\gfx\attacker_walking_1_3.png" />
+    <Image Include="Assets\gfx\attacker_walking_2_0.png" />
+    <Image Include="Assets\gfx\attacker_walking_2_1.png" />
+    <Image Include="Assets\gfx\attacker_walking_2_2.png" />
+    <Image Include="Assets\gfx\attacker_walking_2_3.png" />
+    <Image Include="Assets\gfx\attacker_walking_3_0.png" />
+    <Image Include="Assets\gfx\attacker_walking_3_1.png" />
+    <Image Include="Assets\gfx\attacker_walking_3_2.png" />
+    <Image Include="Assets\gfx\attacker_walking_3_3.png" />
+    <Image Include="Assets\gfx\attacker_walking_4_0.png" />
+    <Image Include="Assets\gfx\attacker_walking_4_1.png" />
+    <Image Include="Assets\gfx\attacker_walking_4_2.png" />
+    <Image Include="Assets\gfx\attacker_walking_4_3.png" />
+    <Image Include="Assets\gfx\attacker_walking_5_0.png" />
+    <Image Include="Assets\gfx\attacker_walking_5_1.png" />
+    <Image Include="Assets\gfx\attacker_walking_5_2.png" />
+    <Image Include="Assets\gfx\attacker_walking_5_3.png" />
+    <Image Include="Assets\gfx\bigboulder.png" />
+    <Image Include="Assets\gfx\bones.png" />
+    <Image Include="Assets\gfx\boulders.png" />
+    <Image Include="Assets\gfx\boulders2.png" />
+    <Image Include="Assets\gfx\building_factory_4.png" />
+    <Image Include="Assets\gfx\building_factory_5.png" />
+    <Image Include="Assets\gfx\building_factory_6.png" />
+    <Image Include="Assets\gfx\building_factory_7.png" />
+    <Image Include="Assets\gfx\building_factory_8.png" />
+    <Image Include="Assets\gfx\building_lab_5.png" />
+    <Image Include="Assets\gfx\building_lab_6.png" />
+    <Image Include="Assets\gfx\building_lab_7.png" />
+    <Image Include="Assets\gfx\building_lab_8.png" />
+    <Image Include="Assets\gfx\building_mine_3.png" />
+    <Image Include="Assets\gfx\building_mine_4.png" />
+    <Image Include="Assets\gfx\building_mine_5.png" />
+    <Image Include="Assets\gfx\building_mine_6.png" />
+    <Image Include="Assets\gfx\building_mine_7.png" />
+    <Image Include="Assets\gfx\building_mine_8.png" />
+    <Image Include="Assets\gfx\building_tower_0.png" />
+    <Image Include="Assets\gfx\building_tower_1.png" />
+    <Image Include="Assets\gfx\building_tower_2.png" />
+    <Image Include="Assets\gfx\building_tower_3.png" />
+    <Image Include="Assets\gfx\building_tower_4.png" />
+    <Image Include="Assets\gfx\building_tower_5.png" />
+    <Image Include="Assets\gfx\building_tower_6.png" />
+    <Image Include="Assets\gfx\building_tower_7.png" />
+    <Image Include="Assets\gfx\building_tower_8.png" />
+    <Image Include="Assets\gfx\building_tower_9.png" />
+    <Image Include="Assets\gfx\deadtree1_00.png" />
+    <Image Include="Assets\gfx\defenders.png" />
+    <Image Include="Assets\gfx\defender_9.png" />
+    <Image Include="Assets\gfx\explosions_test4.png" />
+    <Image Include="Assets\gfx\features.png" />
+    <Image Include="Assets\gfx\font.png" />
+    <Image Include="Assets\gfx\font_large.png" />
+    <Image Include="Assets\gfx\grass.png" />
+    <Image Include="Assets\gfx\grasses01.png" />
+    <Image Include="Assets\gfx\grasses02.png" />
+    <Image Include="Assets\gfx\grasses04.png" />
+    <Image Include="Assets\gfx\grasses05.png" />
+    <Image Include="Assets\gfx\grave1.png" />
+    <Image Include="Assets\gfx\icons.png" />
+    <Image Include="Assets\gfx\icons64.png" />
+    <Image Include="Assets\gfx\plant.png" />
+    <Image Include="Assets\gfx\player_heads_alliance.png" />
+    <Image Include="Assets\gfx\player_heads_select.png" />
+    <Image Include="Assets\gfx\rocks.png" />
+    <Image Include="Assets\gfx\shrub2-01.png" />
+    <Image Include="Assets\gfx\skulls.png" />
+    <Image Include="Assets\gfx\slabs.png" />
+    <Image Include="Assets\gfx\starfield.jpg" />
+    <Image Include="Assets\gfx\swirl01.png" />
+    <Image Include="Assets\gfx\tree2_00.png" />
+    <Image Include="Assets\gfx\tree2_01.png" />
+    <Image Include="Assets\gfx\tree2_02.png" />
+    <Image Include="Assets\gfx\tree2_03.png" />
+    <Image Include="Assets\gfx\tree3_00.png" />
+    <Image Include="Assets\gfx\tree3_01.png" />
+    <Image Include="Assets\gfx\tree3_02.png" />
+    <Image Include="Assets\gfx\tree3_03.png" />
+    <Image Include="Assets\gfx\tree5_00.png" />
+    <Image Include="Assets\gfx\tree5_01.png" />
+    <Image Include="Assets\gfx\tree5_02.png" />
+    <Image Include="Assets\gfx\tree5_03.png" />
+    <Image Include="Assets\gfx\weed01.png" />
+    <Image Include="Assets\gfx\weed02.png" />
+    <Image Include="Assets\gfx\weed03.png" />
+    <Image Include="Assets\gfx\weed04.png" />
+    <Image Include="Assets\Logo.png" />
+    <Image Include="Assets\SmallLogo.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
+    <None Include="Assets\islands\0mega.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\alpha.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\binary.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\castle.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\devil.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\eep.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\final.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\font.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\globe.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\home.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\infinity.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\just.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\koala.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\loop.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\moon.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\ninth.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\oxygen.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\polar.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\quart.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\rare.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\semi.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\toxic.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\universal.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\vine.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\wreath.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\x.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\yen.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\islands\zinc.map">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\music\defeat.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\music\gamemusic.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\music\mainscreen.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\music\victory.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\sound\biplane.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\sound\jetplane.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\sound\spaceship.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="gigalomania-WinRT_StoreKey.pfx" />
+    <None Include="gigalomania-WinRT_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common.h" />
+    <ClInclude Include="..\..\game.h" />
+    <ClInclude Include="..\..\gamestate.h" />
+    <ClInclude Include="..\..\gui.h" />
+    <ClInclude Include="..\..\image.h" />
+    <ClInclude Include="..\..\panel.h" />
+    <ClInclude Include="..\..\player.h" />
+    <ClInclude Include="..\..\resources.h" />
+    <ClInclude Include="..\..\screen.h" />
+    <ClInclude Include="..\..\sector.h" />
+    <ClInclude Include="..\..\sound.h" />
+    <ClInclude Include="..\..\stdafx.h" />
+    <ClInclude Include="..\..\TinyXML\tinyxml.h" />
+    <ClInclude Include="..\..\tutorial.h" />
+    <ClInclude Include="..\..\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\SDL\src\main\winrt\SDL_winrt_main_NonXAML.cpp" />
+    <ClCompile Include="..\..\game.cpp" />
+    <ClCompile Include="..\..\gamestate.cpp" />
+    <ClCompile Include="..\..\gui.cpp" />
+    <ClCompile Include="..\..\image.cpp" />
+    <ClCompile Include="..\..\main.cpp" />
+    <ClCompile Include="..\..\panel.cpp" />
+    <ClCompile Include="..\..\player.cpp" />
+    <ClCompile Include="..\..\resources.cpp" />
+    <ClCompile Include="..\..\screen.cpp" />
+    <ClCompile Include="..\..\sector.cpp" />
+    <ClCompile Include="..\..\sound.cpp" />
+    <ClCompile Include="..\..\stdafx.cpp" />
+    <ClCompile Include="..\..\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="..\..\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\tutorial.cpp" />
+    <ClCompile Include="..\..\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\sound\bomb.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\ergonomically_terrific.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\it_s_all_over.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\misc_menu_3.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\pain1.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\putting_you_on_hold.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\the_design_is_finished.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\the_factory_s_been_destroyed.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\the_lab_s_been_destroyed.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\the_mine_is_destroyed.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\the_production_run_s_completed.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\the_sector_s_been_destroyed.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\tower_critical.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\we_re_running_out_of_elements.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\we_ve_advanced_a_tech_level.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\we_ve_been_nuked.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\we_ve_conquered_the_sector.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\we_ve_nuked_them.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\we_ve_won.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Assets\sound\woodbrk.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\external\SDL\VisualC-WinRT\WinRT81_VS2013\SDL-WinRT81.vcxproj">
+      <Project>{c8df6173-06a1-4f56-a9bc-2002596b30e9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\jpeg-WinRT81.vcxproj">
+      <Project>{2e908ad5-95e9-4b2d-bd6e-ba3ea4c1a2ee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\libpng-WinRT81.vcxproj">
+      <Project>{5fbdc49a-7939-40f9-b78e-975f190adbd3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\libwebp-WinRT81.vcxproj">
+      <Project>{1eb035a3-815a-4382-90d3-4510ab605ad9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\SDL_image-WinRT81.vcxproj">
+      <Project>{29b4d11f-59f3-4ebc-a769-3babd140db9a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\zlib-WinRT81.vcxproj">
+      <Project>{acea4101-6f4a-44ed-9ec1-289821dac711}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libogg_dynamic-WinRT81.vcxproj">
+      <Project>{6bc6349c-e355-4f1c-9290-ff755114a84b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libvorbisfile_dynamic-WinRT81.vcxproj">
+      <Project>{936b2819-2364-45d9-901d-52878914fafa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libvorbis_dynamic-WinRT81.vcxproj">
+      <Project>{e3ab27f1-eb89-4c65-85df-cb6a4f805753}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\SDL_mixer-WinRT81.vcxproj">
+      <Project>{3a833c7a-c776-4202-9dbd-bc879b23c605}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.targets" />
+  </ImportGroup>
+</Project>

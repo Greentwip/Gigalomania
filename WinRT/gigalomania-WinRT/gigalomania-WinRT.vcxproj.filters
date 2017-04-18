@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>9689d3dd-b1b9-41eb-b252-85edb382bd1c</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3d45b5e6-4d40-4c79-9043-bcd82cfc1449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b543eca0-0785-4b3e-86b6-891eadaf5070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\gfx">
+      <UniqueIdentifier>{fb551887-c2a1-4515-85aa-44e4fc89a42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\islands">
+      <UniqueIdentifier>{17e8607e-b331-4c81-b436-a81bf67fcda1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\music">
+      <UniqueIdentifier>{042f60f7-3842-47f7-b347-94d29fcb1881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\sound">
+      <UniqueIdentifier>{cc35831b-7784-420b-9d88-ab87a5203b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXML">
+      <UniqueIdentifier>{cbff8465-f534-44ca-94c7-eb63c314154c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXML\Source Files">
+      <UniqueIdentifier>{5bcec8ad-e16f-4e72-9252-91a9ba6f94f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXML\Header Files">
+      <UniqueIdentifier>{3676bc97-8597-4237-a19e-6e6981e492bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gigalomania-WinRT_TemporaryKey.pfx" />
+    <None Include="Assets\islands\0mega.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\alpha.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\binary.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\castle.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\devil.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\eep.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\final.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\font.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\globe.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\home.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\infinity.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\just.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\koala.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\loop.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\moon.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\ninth.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\oxygen.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\polar.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\quart.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\rare.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\semi.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\toxic.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\universal.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\vine.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\wreath.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\x.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\yen.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\islands\zinc.map">
+      <Filter>Assets\islands</Filter>
+    </None>
+    <None Include="Assets\music\defeat.ogg">
+      <Filter>Assets\music</Filter>
+    </None>
+    <None Include="Assets\music\gamemusic.ogg">
+      <Filter>Assets\music</Filter>
+    </None>
+    <None Include="Assets\music\mainscreen.ogg">
+      <Filter>Assets\music</Filter>
+    </None>
+    <None Include="Assets\music\victory.ogg">
+      <Filter>Assets\music</Filter>
+    </None>
+    <None Include="Assets\sound\biplane.ogg">
+      <Filter>Assets\sound</Filter>
+    </None>
+    <None Include="Assets\sound\jetplane.ogg">
+      <Filter>Assets\sound</Filter>
+    </None>
+    <None Include="Assets\sound\spaceship.ogg">
+      <Filter>Assets\sound</Filter>
+    </None>
+    <None Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="gigalomania-WinRT_StoreKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gamestate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\panel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tutorial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TinyXML\tinyxml.h">
+      <Filter>TinyXML\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tutorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gamestate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\SDL\src\main\winrt\SDL_winrt_main_NonXAML.cpp" />
+    <ClCompile Include="..\..\TinyXML\tinyxmlparser.cpp">
+      <Filter>TinyXML\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TinyXML\tinyxml.cpp">
+      <Filter>TinyXML\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TinyXML\tinyxmlerror.cpp">
+      <Filter>TinyXML\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\gfx\attacker_ammo.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_flying.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_0_0.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_0_1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_0_2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_0_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_1_0.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_1_1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_1_2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_1_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_2_0.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_2_1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_2_2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_2_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_3_0.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_3_1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_3_2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_3_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_4_0.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_4_1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_4_2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_4_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_5_0.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_5_1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_5_2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_5_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_10_0.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_10_1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_10_2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\attacker_walking_10_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\bigboulder.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\bones.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\boulders.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\boulders2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_factory_4.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_factory_5.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_factory_6.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_factory_7.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_factory_8.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_lab_5.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_lab_6.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_lab_7.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_lab_8.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_mine_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_mine_4.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_mine_5.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_mine_6.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_mine_7.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_mine_8.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_0.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_2.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_3.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_4.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_5.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_6.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_7.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_8.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\building_tower_9.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\deadtree1_00.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\defender_9.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\defenders.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\explosions_test4.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\features.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\font.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\font_large.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\grass.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\grasses01.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\grasses02.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\grasses04.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\grasses05.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\grave1.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\icons.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\icons64.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\plant.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\player_heads_alliance.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\player_heads_select.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\rocks.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\shrub2-01.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\skulls.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\slabs.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\starfield.jpg">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\swirl01.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree2_00.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree2_01.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree2_02.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree2_03.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree3_00.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree3_01.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree3_02.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree3_03.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree5_00.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree5_01.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree5_02.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\tree5_03.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\weed01.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\weed02.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\weed03.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+    <Image Include="Assets\gfx\weed04.png">
+      <Filter>Assets\gfx</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\sound\bomb.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\ergonomically_terrific.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\it_s_all_over.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\misc_menu_3.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\pain1.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\putting_you_on_hold.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\the_design_is_finished.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\the_factory_s_been_destroyed.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\the_lab_s_been_destroyed.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\the_mine_is_destroyed.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\the_production_run_s_completed.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\the_sector_s_been_destroyed.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\tower_critical.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\we_re_running_out_of_elements.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\we_ve_advanced_a_tech_level.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\we_ve_been_nuked.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\we_ve_conquered_the_sector.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\we_ve_nuked_them.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\we_ve_won.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\woodbrk.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResources.rc" />
+  </ItemGroup>
+</Project>
